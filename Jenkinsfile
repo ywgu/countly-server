@@ -18,6 +18,7 @@ node {
 
     stage "Push"
 
+        sh "docker login -p wangjunfeng -u hdtrd"
         sh "docker push hdtrd/countly-server"
 
     stage "Deploy"
