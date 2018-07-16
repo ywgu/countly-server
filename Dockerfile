@@ -14,7 +14,7 @@ RUN  useradd -r -M -U -d /opt/countly -s /bin/false countly && \
 VOLUME ["/var/lib/mongodb"]
 
 # Change MongoDB folder permissions and add services folders
-RUN chown -R mongodb:mongodb /var/lib/mongodb && \
+RUN chown -R mongodb /var/lib/mongodb && \
     mkdir /etc/service/mongodb && \
     mkdir /etc/service/nginx && \
     mkdir /etc/service/countly-api && \
