@@ -14,7 +14,7 @@ node {
 
     stage "Build"
         sh "echo ${imageName}"
-        sh "docker build -t hdtrd/countlyl-server ."
+        sh "docker build -t hdtrd/countly-server ."
 
     stage "Push"
 
