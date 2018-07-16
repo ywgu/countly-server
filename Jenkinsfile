@@ -18,7 +18,7 @@ node {
 
     stage "Push"
 
-        sh "docker push ${imageName}"
+        sh "docker push hdtrd/countly-server"
 
     stage "Deploy"
         sh "kubectl get pods"
