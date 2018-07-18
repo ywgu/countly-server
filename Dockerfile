@@ -11,7 +11,7 @@ RUN  useradd -r -M -U -d /opt/countly -s /bin/false countly && \
 	/opt/countly/bin/countly.install.sh
 
 ## Add MongoDB data volume and nginx
-VOLUME ["/var/lib/mongodb","/etc/letsencrypt/live/a.shopkol.com","/etc/nginx/sites-enabled"]
+VOLUME ["/var/lib/mongodb","/etc/nginx/ssl","/etc/nginx/sites-enabled"]
 
 # Change MongoDB folder permissions and add services folders
 RUN chown -R mongodb /var/lib/mongodb && \
